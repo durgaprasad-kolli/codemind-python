@@ -1,4 +1,3 @@
-
 a = int(input())
 k = list(map(int,input().split()))
 c=0
