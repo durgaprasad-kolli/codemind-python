@@ -1,16 +1,17 @@
-def p(x):
-    c=0
-    for i in range(1,x+1):
-        if x%i==0:
-            c+=1
-    if c==2:
-        return True
+def is_Prime(n):
+    for i in range(2, int(n**0.5)+1):
+        if n%i == 0:
+            return False
+            break
     else:
-        return False
-a = int(input())
-c=1
-for i in range(1,a):
-    if a%i==0:
-        if p(i) is False:
-            c+=1
-print(c)
+        return True
+
+x = int(input())
+lst = []
+for i in range(1, x+1):
+    if x%i == 0:
+        lst.append(i)
+for val in lst:
+    if is_Prime(val):
+        lst.remove(val)
+print(len(lst))
