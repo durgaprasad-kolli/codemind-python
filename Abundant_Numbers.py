@@ -1,10 +1,10 @@
-a = int(input())
-c=0
-for j in range(1,a-1):
-    if a%j==0:
-        c+=j
-if c>a:
+n = int(input())
+s = 0
+x = n
+for i in range(1, n):
+    if (n%i == 0) :
+        s+=i
+if s > x :
     print("True")
-else:
+else :
     print("False")
-        
