@@ -1,6 +1,8 @@
 import math
-a = int(input())
-if a**.5 in range(1, 10000):
-    print ("True")
-else:
-    print ("False")
+n = int(input())
+sq = math.sqrt(n)
+sq2 = int(sq)
+if sq2*sq2 == n :
+    print("True")
+else :
+    print("False")
